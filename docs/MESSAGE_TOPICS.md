@@ -1,0 +1,63 @@
+# Message Topics
+
+## Core Topics
+- `command:request`
+  - Producer: `components/*`, sometimes `index.js` lifecycle handlers.
+  - Consumer: `utils/command_router.js`, `file_manager/file_manager.js` (for `file/*` commands).
+- `state:changed`
+  - Producer: `utils/store.js`.
+  - Consumer: components, `file_manager`, `index.js`.
+- `view:update`
+  - Producer: components and bootstrap view sync.
+  - Consumer: `render/render.js`.
+- `view:remove`
+  - Producer: optional cleanup publishers.
+  - Consumer: `render/render.js`.
+- `theme:apply`
+  - Producer: `index.js`.
+  - Consumer: `render/render.js`.
+- `render:flushed`
+  - Producer: `render/render.js`.
+  - Consumer: components needing post-DOM hooks (`dock`, `dock_card`, `resume_module`).
+- `dock:windows-changed`
+  - Producer: `components/dock`.
+  - Consumer: `components/dock_card`.
+
+## Command Types (Current)
+- Runtime:
+  - `runtime/select-module`
+  - `runtime/set-active-panel`
+  - `runtime/set-status`
+- Theme/View:
+  - `theme/apply-preset`
+  - `theme/set-field`
+  - `theme/set-font`
+  - `theme/set-color`
+  - `view/set-grid`
+  - `meta/set-view-mode`
+- Module:
+  - `module/add`
+  - `module/duplicate`
+  - `module/delete`
+  - `module/update-layout`
+  - `module/nudge`
+  - `module/resize-step`
+  - `module/update-title`
+  - `module/style-set-flag`
+  - `module/style-set-field`
+  - `module/style-set-color`
+  - `module/normalize-all-layouts`
+- Item/Bullet:
+  - `item/add`
+  - `item/duplicate`
+  - `item/delete`
+  - `item/update-field`
+  - `bullet/add`
+  - `bullet/delete`
+  - `bullet/update`
+- File:
+  - `file/import-json`
+  - `file/export-json`
+  - `file/export-html`
+  - `file/print`
+  - `file/clear-draft`

@@ -1,0 +1,70 @@
+﻿{
+  "classic-formal": {
+    "name": "经典正式",
+    "colors": {
+      "text": "#221d17",
+      "heading": "#1f1711",
+      "accent": "#8a5c33"
+    },
+    "typography": {
+      "headingFont": "Times New Roman",
+      "bodyFont": "Aptos"
+    },
+    "dividerStyle": "thin",
+    "itemDividerStyle": "thin",
+    "borderStyle": "none",
+    "ornamentStyle": "none",
+    "density": "standard"
+  },
+  "ledger-serif": {
+    "name": "书卷衬线",
+    "colors": {
+      "text": "#201913",
+      "heading": "#1a130e",
+      "accent": "#6d4824"
+    },
+    "typography": {
+      "headingFont": "Georgia",
+      "bodyFont": "Georgia"
+    },
+    "dividerStyle": "double",
+    "itemDividerStyle": "double",
+    "borderStyle": "left-rule",
+    "ornamentStyle": "corners",
+    "density": "compact"
+  },
+  "monochrome-executive": {
+    "name": "黑白商务",
+    "colors": {
+      "text": "#171717",
+      "heading": "#101010",
+      "accent": "#535353"
+    },
+    "typography": {
+      "headingFont": "Bahnschrift",
+      "bodyFont": "Aptos"
+    },
+    "dividerStyle": "thin",
+    "itemDividerStyle": "thin",
+    "borderStyle": "frame",
+    "ornamentStyle": "none",
+    "density": "standard"
+  },
+  "ornament-light": {
+    "name": "轻装饰",
+    "colors": {
+      "text": "#2a1f18",
+      "heading": "#47261f",
+      "accent": "#9c5a43"
+    },
+    "typography": {
+      "headingFont": "Georgia",
+      "bodyFont": "Georgia"
+    },
+    "dividerStyle": "ornament",
+    "itemDividerStyle": "ornament",
+    "borderStyle": "frame",
+    "ornamentStyle": "title",
+    "density": "relaxed"
+  }
+}
